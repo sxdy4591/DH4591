@@ -19,15 +19,25 @@
 		/* 设置背景颜色，背景图加载过程中会显示背景色 */
 		background-color: #464646;
 	}
+	#musicbox{
+		position: absolute;
+		bottom: 50px;
+		left:20px;
+	}
 </style>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
 </head>
-<body>
-<div id="musicbox">
-  <audio preload="auto" controls="controls" autoplay="autoplay" loop="loop" >
+<body onLoad="MM_popupMsg('欢迎拜访我の小网站！')" >
+<div id="musicbox" >
+  <audio preload="auto" controls="controls" autoplay="autoplay" >
     <source src="audio/安河桥.mp3" type="audio/mp3">
+    <source src="audio/夜间巡航.mp3" type="audio/mp3">
   </audio>
 </div>
 
-	
 </body>
 </html>
