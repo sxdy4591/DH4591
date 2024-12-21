@@ -6,6 +6,7 @@
     <title>DH4591の个人小站点</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<script src="scripts/bianse.js"></script>
+	<script src="scripts/musicbox.js"></script>
     <style>
         body {
             background-image: url(images/bj.png);
@@ -14,7 +15,7 @@
             background-attachment: fixed;
             background-size: cover;
         }
-        #musicbox {
+        #musicPlayer {
             position: fixed;
             bottom: 20px;
             left: 20px;
@@ -47,12 +48,9 @@
 </head>
 <body>
     <!-- 音乐播放器 -->
-    <div id="musicbox">
+    <div id="musicPlayer">
         <audio preload="auto" controls autoplay>
             <source src="audio/安河桥.mp3" type="audio/mp3">
-            <source src="audio/安河桥.ogg" type="audio/ogg">
-            <source src="audio/夜间巡航.mp3" type="audio/mp3">
-            <source src="audio/夜间巡航.ogg" type="audio/ogg">
             您的浏览器不支持音频标签。
       </audio>
     </div>
