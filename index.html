@@ -5,38 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH4591の个人小站点</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script src="scripts/bianse.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             background-image: url(images/bj.png);
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            background-color: #464646;
-            font-family: Arial, sans-serif;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        #popup {
-            display: none;
-            font-size: 20px;
-            color: white;
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
         }
         #musicbox {
             position: fixed;
@@ -50,7 +26,6 @@
             font-weight: bold;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
             transition: color 1s ease-in-out;
-            margin-top: 20vh;
             opacity: 0;
             animation: fadeIn 2s forwards;
         }
@@ -67,11 +42,6 @@
     </style>
 </head>
 <body>
-    <!-- 弹窗 -->
-	<div id="popup">
-		<span id="closePopup" style="cursor: pointer; font-size: 18px; color: red;">×</span>
-	</div>
-
     <!-- 音乐播放器 -->
     <div id="musicbox">
         <audio preload="auto" controls autoplay>
@@ -84,24 +54,6 @@
     </div>
     
     <!-- 标题部分 -->
-    <div id="title">欢迎访问DH4591（SZX）的站点</div>
-
-    <!-- 引入脚本 -->
-    <script src="scripts/bianse.js"></script>
-    <script>
-        // 弹窗功能
-        function showPopup(message) {
-            const popup = document.getElementById('popup');
-            popup.textContent = message;
-            popup.style.display = 'block';
-            setTimeout(function() {
-                popup.style.display = 'none';
-            }, 3000);  // 3秒后隐藏弹窗
-        }
-
-        window.onload = function() {
-            showPopup('欢迎拜访我の小网站！');
-        };
-    </script>
+    <div id="title">DH4591（SZX）の站点</div>
 </body>
 </html>
