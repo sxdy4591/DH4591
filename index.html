@@ -44,7 +44,9 @@
             left: 20px;
         }
         #title {
-            font-size: 48px;
+			position: absolute;
+            font-size: 20px;
+			top: 0px;
             font-weight: bold;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
             transition: color 1s ease-in-out;
@@ -66,7 +68,9 @@
 </head>
 <body>
     <!-- 弹窗 -->
-    <div id="popup"></div>
+	<div id="popup">
+		<span id="closePopup" style="cursor: pointer; font-size: 18px; color: red;">×</span>
+	</div>
 
     <!-- 音乐播放器 -->
     <div id="musicbox">
